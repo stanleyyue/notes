@@ -81,7 +81,7 @@ int main(int argc, char* argv[]) {
 	for (i=0; i<10; ++i) {
 		data[i].seq = i;
 		mysql_init(&(data[i].mysql));
-		if (!mysql_real_connect(&(data[i].mysql), "115.28.154.114", "test2", "test123", "mi_train", 0, NULL, 0)) {
+		if (!mysql_real_connect(&(data[i].mysql), "localhost", "test2", "test123", "mi_train", 0, NULL, 0)) {
 			printf("%s(%d): mysql_real_connect error: %s\n", __FUNCTION__, __LINE__, mysql_error(&(data[i].mysql)));
 			return -1;
 		} 
