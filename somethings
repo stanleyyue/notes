@@ -1,0 +1,1 @@
+gcc -Wall -g -o test_mysql test_mysql.c $(pkg-config --cflags --libs libuv libmysqlclient)
